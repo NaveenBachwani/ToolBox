@@ -1,0 +1,11 @@
+---
+description: README footer sync — edit internal/readme-footer.md only, never inline
+alwaysApply: true
+---
+
+# README footer
+
+- Never paste the disclaimer paragraphs directly into README bodies.
+- Footer source of truth: `internal/readme-footer.md` (gitignored folder).
+- After creating or editing any `README.md` or `*-README.md`, run: `python3 internal/sync-readme-footers.py`
+- To change footer text globally, edit only `internal/readme-footer.md`, then re-run the sync script.

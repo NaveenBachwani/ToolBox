@@ -1,0 +1,25 @@
+# Personal maintainer tooling — never commit
+internal/
+
+# Local IDE state (project rules are committed under .cursor/rules/)
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/**
+
+# Per-script local data
+**/input/**
+**/output/**
+**/config.local.py
+**/*.local.py
+**/*.local.json
+
+# Secret data files (not folders/scripts named *credentials*)
+**/credentials.txt
+**/credentials.csv
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+.venv/

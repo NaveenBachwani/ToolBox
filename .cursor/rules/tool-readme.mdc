@@ -1,0 +1,43 @@
+---
+description: ToolBox tool documentation — naming, Basics/Advanced structure, footer sync
+globs: "**/*-README.md"
+alwaysApply: false
+---
+
+# Tool README conventions
+
+## Naming
+
+- Root repo overview: `README.md` only (repo root).
+- Per-tool docs: `<tool-folder-name>-README.md` inside that tool folder.
+  - Example: `compare-folders/compare-folders-README.md`
+- Do **not** use `README.md` inside tool folders.
+
+## Structure
+
+Every tool README must use exactly two top-level sections:
+
+1. **`## Basics`** — essentials a first-time user needs: what it does, how to run, minimal config, input/output, security warnings if relevant.
+2. **`## Advanced`** — optional depth: mode tables, edge cases, customization, limitations, migration tips.
+
+Keep existing helpful detail; reorganize under Basics vs Advanced rather than deleting it.
+
+Use `###` subheadings within each section (e.g. `### Run it`, `### Configuration`).
+
+## Footer
+
+- Never paste disclaimer paragraphs directly into README bodies.
+- Footer source of truth: `internal/readme-footer.md` (gitignored).
+- End every public README with the `<!-- readme-footer -->` marker (sync script fills the rest).
+- After creating or editing any `README.md` or `*-README.md`, run:
+
+```bash
+python3 internal/sync-readme-footers.py
+```
+
+## New tool checklist
+
+1. Create `<tool-name>/` with script, `defaults.py`, `config.example.py`, `input/`, `output/`.
+2. Add `<tool-name>/<tool-name>-README.md` with Basics + Advanced sections.
+3. Add a row to the **Tools** table in root `README.md`.
+4. Run footer sync before commit.
