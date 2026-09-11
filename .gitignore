@@ -1,10 +1,8 @@
 # Personal maintainer tooling — never commit
 internal/
 
-# Local IDE state (project rules are committed under .cursor/rules/)
-.cursor/*
-!.cursor/rules/
-!.cursor/rules/**
+# Local IDE state (rules source: internal/cursor-rules/ — copy to .cursor/rules/ locally)
+.cursor/
 
 # Per-script local data
 **/input/**
