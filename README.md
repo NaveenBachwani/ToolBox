@@ -46,6 +46,10 @@ Scripts create `input/` and `output/` if missing.
 2. Edit paths or other settings.
 3. Never commit `config.local.py` (it is gitignored).
 
+## Maintainers
+
+Local policies, plans, and footer tooling live in gitignored `private/` (not on GitHub). See `private/README_Internal.md` on machines where that folder exists.
+
 <!-- readme-footer -->
 ---
 
