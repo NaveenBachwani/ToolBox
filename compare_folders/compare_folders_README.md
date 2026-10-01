@@ -7,7 +7,7 @@
 ### Run it
 
 ```bash
-cd compare-folders
+cd compare_folders
 python3 compare_folders.py
 ```
 

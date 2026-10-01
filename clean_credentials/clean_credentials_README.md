@@ -1,16 +1,16 @@
 # Clean credentials
 
-`credentials-extract.py` parses a plain-text credentials file into a structured CSV for import into a password manager or spreadsheet.
+`credentials_extract.py` parses a plain-text credentials file into a structured CSV for import into a password manager or spreadsheet.
 
 ## Basics
 
 ### Run it
 
 ```bash
-cd clean-credentials
+cd clean_credentials
 cp config.example.py config.local.py   # first time — set email aliases
 # Place your file at input/credentials.txt
-python3 credentials-extract.py
+python3 credentials_extract.py
 ```
 
 Output: `output/credentials.csv`

@@ -14,7 +14,7 @@ Small, focused Python scripts for everyday file and data tasks. Each tool lives 
 ## Quick start
 
 ```bash
-cd compare-folders
+cd compare_folders
 cp config.example.py config.local.py   # optional — set your paths
 python3 compare_folders.py
 ```
@@ -25,8 +25,8 @@ Results appear in that tool’s `output/` folder. Full usage is in each tool’s
 
 | Folder | Doc | What it does |
 |--------|-----|----------------|
-| [compare-folders](compare-folders/) | [compare-folders-README.md](compare-folders/compare-folders-README.md) | Compare two folder trees (filename + content hash) |
-| [clean-credentials](clean-credentials/) | [clean-credentials-README.md](clean-credentials/clean-credentials-README.md) | Convert a plain-text credentials file to CSV |
+| [compare_folders](compare_folders/) | [compare_folders_README.md](compare_folders/compare_folders_README.md) | Compare two folder trees (filename + content hash) |
+| [clean_credentials](clean_credentials/) | [clean_credentials_README.md](clean_credentials/clean_credentials_README.md) | Convert a plain-text credentials file to CSV |
 
 ## Folder layout (every tool)
 

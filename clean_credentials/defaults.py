@@ -1,4 +1,4 @@
-"""Generic defaults for credentials-extract. Override via config.local.py (gitignored)."""
+"""Generic defaults for credentials_extract. Override via config.local.py (gitignored)."""
 
 from pathlib import Path
 

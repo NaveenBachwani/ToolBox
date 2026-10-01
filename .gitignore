@@ -1,5 +1,6 @@
 # Personal maintainer tooling — never commit
 private/
+internal/
 
 # Local IDE state (rules source: private/cursor_rules/ — copy to .cursor/rules/ locally)
 .cursor/
