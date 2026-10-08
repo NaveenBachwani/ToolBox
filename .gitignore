@@ -2,6 +2,9 @@
 private/
 internal/
 
+# Local backup zips + state (rclone syncs these to GDrive)
+backups/
+
 # Local IDE state (rules source: private/cursor_rules/ — copy to .cursor/rules/ locally)
 .cursor/
 
